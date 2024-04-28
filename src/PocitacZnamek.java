@@ -27,4 +27,11 @@ public abstract class PocitacZnamek {
         vypoctiVyslednouZnamku();
         System.out.println("Vysledna znamka je " + vyslednaZnamka + ".");
     }
+
+    public void vypisVsechnyZnamky(){
+        for(Znamka z: znamky){
+            System.out.print("Známka " + z.getZnamka() + " váhy " + z.getVaha() + ", ");
+        }
+
+    }
 }
